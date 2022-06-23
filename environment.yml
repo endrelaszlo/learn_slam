@@ -1,0 +1,35 @@
+name: slam
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+variables:
+  GRPC_PYTHON_BUILD_SYSTEM_OPENSSL: 1
+  GRPC_PYTHON_BUILD_SYSTEM_ZLIB: 1
+dependencies:
+  - python=3.8
+#  - pytorch>=1.10
+#  - conda-forge::pytorch-lightning
+  - conda-forge::opencv
+  - seaborn
+#  - jupyterlab
+#  - ipykernel
+#  - ipywidgets
+  - matplotlib
+  - pandas
+  - scipy
+  - scikit-learn
+  - numpy
+#  - plotly
+#  - networkx
+  - tqdm
+  - conda-forge::colmap
+  - pip
+  - pip:
+    - pytube
+    - ffmpeg-python
+#    - nbdime
+#    - git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
+#    - torchvision  # Needed by MLFlow log_model
+#    - wandb
+#    - Pillow
