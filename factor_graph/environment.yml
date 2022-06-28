@@ -1,0 +1,28 @@
+name: factor_graph
+channels:
+  - defaults
+#  - conda-forge
+#variables:
+#  GRPC_PYTHON_BUILD_SYSTEM_OPENSSL: 1
+#  GRPC_PYTHON_BUILD_SYSTEM_ZLIB: 1
+dependencies:
+  - python=3.9
+#  - conda-forge::opencv
+  - seaborn
+  - jupyterlab
+#  - ipykernel
+#  - ipywidgets
+  - matplotlib
+  - pandas
+  - scipy
+  - scikit-learn
+  - numpy
+#  - plotly
+#  - networkx
+  - tqdm
+  - pip
+  - pip:
+    - git+https://github.com/brentyi/jaxfg.git
+#    - pytube
+    - ffmpeg-python
+#    - wandb
